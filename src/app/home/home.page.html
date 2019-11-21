@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-button expand="full" (click)="updateMyValue()">Click me!</ion-button>
+
+  {{ myVariable }}
+
+  <ion-button expand="full" (click)="navigate()">Página 2</ion-button>
+
+  <ion-button expand="full" (click)="abrirPagina('page2')">Página 2</ion-button>
+
+  <ion-button expand="full" routerLink="../page2" routerDirection="forward">Página 2 com link </ion-button>
+
+  <ion-button expand="full" (click)="abrirPagina('page3')">Action Sheet e Date time </ion-button>
+  <ion-button expand="full" (click)="abrirPagina('page4')">Fab </ion-button>
+ <!-- <ion-button expand="full" (click)="abrirPagina('films')">Filmes </ion-button>-->
+  <ion-button expand="full" (click)="abrirPagina('page5')">Header e Footer </ion-button>
+  <ion-button expand="full" (click)="abrirPagina('page6')">Tabs </ion-button>
+  
+</ion-content>

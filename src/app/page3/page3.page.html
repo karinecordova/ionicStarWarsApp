@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start" >
+          <ion-back-button></ion-back-button>
+          <ion-title>Action Sheet Example</ion-title>
+        </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<ion-button expand="full" (click)="abrirActionSheet()"> Abrir Action Sheet</ion-button>
+<ion-button expand="full" href="https://codeuniverse.com.br/" target="_blank"> Code Universe</ion-button>
+<ion-button expand="full" href="#" goBack> Back</ion-button>
+<br>
+<ion-item> 
+   <ion-label> Data </ion-label>
+   <ion-datetime>  </ion-datetime>
+</ion-item>
+   
+<ion-item> 
+  <ion-label> DisplayFormat </ion-label>
+  <ion-datetime display-format="DD/MM/YYYY">  </ion-datetime>
+</ion-item>
+
+<ion-item> 
+  <ion-label>Display+Picker </ion-label>
+  <ion-datetime display-format="MM/YYYY"  picker-format="MMMM YYYY">  </ion-datetime>
+</ion-item>
+
+<ion-item> 
+  <ion-label>Máx - Mín </ion-label>
+  <ion-datetime display-format="DD MMMM YYYY"  min="2016" max="2020-10-31">  </ion-datetime>
+</ion-item>
+
+<H3> Imagem Exemplo</H3>
+<ion-img src="assets/img/datetime-format.png"></ion-img>
+
+</ion-content>
